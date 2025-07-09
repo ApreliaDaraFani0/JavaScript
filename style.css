@@ -1,0 +1,191 @@
+:root {
+    --blue-main: #0046be;
+    --light-gray: #f6f8fb;
+    --dark-grey: #6c757d;
+    --text: #2d2d2d;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+  }
+  
+  header {
+    background: var(--light-gray);
+    color: var(--text);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 690;
+    margin-bottom: 15px;
+  }
+
+  header p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: var(--dark-grey);
+  }
+
+  header img {
+    width: 260px;
+    height: 120px;
+    animation: bounce 2s;
+  }
+  
+  @keyframes bounce {
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .btn-primary {
+    background: var(--blue-main);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: blue;
+  }
+  
+  section {
+    padding:60px 20px;
+    max-width: auto;
+    margin: auto;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+
+  section p {
+    font-size: 1rem;
+    color: var(--dark-grey);
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .steps {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    gap: 30px;
+    padding: 20px 60px;
+    margin-top: 20px;
+  }
+
+  .step {
+    background: white;
+    padding: 30px 20px;
+  }
+  
+  .step:hover {
+    transform: translateY(-5px);
+  }
+
+  .step i {
+    font-size: 2.5rem;
+    color: var(--blue-main);
+    margin-bottom: 15px;
+  }
+
+  .step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+
+
+  .reviews {
+    border-top: 1px solid grey;
+  }
+  
+  .review-list {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .review {
+    background: var(--light-gray);
+    padding: 30px 20px;
+    border: 1px #ccc;
+    border-radius: 12px;
+    display: grid;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+
+  .review:hover {
+      transform:translateY(-5px);
+  }
+
+  .review i {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 15px;
+  }
+
+  .review h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text);
+  } 
+
+  .review h4 {
+    color: var(--blue-main);
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .review p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    background: var(--light-gray);
+  }
+
+  footer {
+    background: var(--blue-main);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    section p {
+      font-size: 1rem;
+    }
+  }

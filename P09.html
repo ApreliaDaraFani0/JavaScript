@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Latihan.Javascript</title>
+    </head>
+    <body>
+        <input type="text" id="nama" onkeyup="sandy()">
+        <button type="button" onclick="sandy()" id="btn_tampil">Tampil</button>
+        <div id="tampil_data"></div>
+        <button type="button" value="pink" onclick="ratna(this.value)">pink</button>
+        <button type="button" value="green" onclick="ratna(this.value)">green</button>
+        <button type="button" value="blue" onclick="ratna(this.value)">blue</button>
+        <button type="button" value="yellow" onclick="ratna(this.value)">yellow</button>
+    </body>
+</html>
+<script>
+    function sandy()
+    {
+        var na = document.getElementById("nama").value;
+        // alert("Hallo, " + na + "!"); 
+        document.getElementById("tampil_data").innerHTML = na;
+    }
+
+    function ratna(warna)
+    {
+        document.getElementById("btn_tampil").style.backgroundColor = warna;
+    }
+</script>

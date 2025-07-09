@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">Klik sini!!</button>
+    <button type="button" onclick="fany()">Klik sini!!</button> <!-- berhubungan dengan function fany()-->
+    <br><br>
+
+    <input type="text" id="nama" value=""> <!--Berhubungan dengan  Var na yang akan menampilkan tabel teks isi-->
+    <button type="button" onclick="sandy()">Tampil</button> <!-- berhubungan dengan function sandy() yang akan menampilkan pop up ketika mengklik button Tampil-->
+    <br> <br>
+
+    <input type="text" id="name" value=""> <!--Berhubungan dengan  Var na yang akan menampilkan tabel teks isi-->
+    <button type="button" onclick="dara()">Tampil</button> <!-- berhubungan dengan function sandy() yang akan menampilkan pop up ketika mengklik button Tampil-->
+    <div id="tampil_data"> </div>
+
+    <br><br>
+    <input type="text" id="name" value=""> <!--Berhubungan dengan  Var na yang akan menampilkan tabel teks isi-->
+    <button type="button" onclick="fara()" id="btn_tampil">Tampil</button> <!-- berhubungan dengan function sandy() yang akan menampilkan pop up ketika mengklik button Tampil-->
+    <div id="tampil_data"> </div>
+
+    <button type="button" value="blue" onclick="ara(this.value)">Blue</button>
+    <button type="button" value="pink" onclick="ara(this.value)">Pink</button>
+    <button type="button" value="green" onclick="ara(this.value)">Green</button>
+    <button type="button" value="yellow" onclick="ara(this.value)">Yellow</button>
+    <div id="btn_tampil"> </div>
+</body>
+</html>
+<script>
+    function fany()
+    {
+        alert("Hello!");
+    }
+
+    function sandy()
+    {
+        var na = document.getElementById("nama").value; <!-- berhubungan dengan input type-->
+        alert("Hello, " + na + "!"); //akan menampilkan hasil teks berupa hallo yang ditambah ketikkan di tabel teks dan akan muncul di pop up ----> 
+    }
+
+    function dara()
+    {
+        var ne = document.getElementById("name").value; //berhubungan dengan input type-->
+        document.getElementById("tampil_data").innerHTML = ne; //menampilkan teks yang di klik di botton tampil-->
+    }
+
+    function fara()
+    {
+        var ne = document.getElementById("name").value; //berhubungan dengan input type-->
+        document.getElementById("tampil_data").innerHTML = ne; //menampilkan teks yang di klik di botton tampil-->
+    }
+
+    function ara(warna)
+    {
+        document.getElementById("btn_tampil").style.backgroundColor = warna;
+    }
+
+
+</script>
